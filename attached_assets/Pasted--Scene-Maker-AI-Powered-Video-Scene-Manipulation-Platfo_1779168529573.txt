@@ -1,0 +1,586 @@
+# Scene Maker — AI-Powered Video Scene Manipulation Platform
+
+Build a modern AI-powered mobile application called “Scene Maker”.
+
+The app is NOT a traditional timeline-based video editor.
+
+The core idea is:
+“Edit objects and reality inside videos using AI with a simple, cinematic, and minimal interface.”
+
+The application should allow users to:
+
+* remove objects
+* replace objects
+* recolor objects
+* modify movement
+* relight scenes
+* generate captions
+* apply cinematic styles
+
+using AI with almost no technical complexity exposed to the user.
+
+The app must feel:
+
+* futuristic
+* cinematic
+* lightweight
+* intelligent
+* smooth
+* premium
+* creator-focused
+
+Target users:
+
+* TikTok creators
+* Instagram Reels creators
+* YouTube Shorts creators
+* marketers
+* content creators
+* casual users wanting professional edits quickly
+
+---
+
+# Main Product Philosophy
+
+The app should focus on:
+“Editing by intention, not by tools.”
+
+Avoid:
+
+* complicated timelines
+* overwhelming interfaces
+* professional editing complexity
+* frame-by-frame editing workflows
+
+Instead:
+
+* tap object
+* choose action
+* AI performs the edit automatically
+
+The experience must feel effortless.
+
+---
+
+# Required Technology Stack
+
+## Frontend
+
+* Flutter
+* Material 3
+* Smooth animations
+* Dark mode first
+* Responsive UI
+* RTL/LTR support
+
+---
+
+## Backend
+
+* FastAPI
+
+---
+
+## AI & Video Processing
+
+* FFmpeg
+* YOLOv8
+* SAM2 (Segment Anything)
+* Object Tracking system
+* Optical Flow
+* Video Inpainting models
+* Diffusion-based object replacement system
+
+---
+
+## Storage & Services
+
+* Firebase or Supabase
+
+Use for:
+
+* authentication
+* cloud sync
+* analytics
+* feedback storage
+* remote config
+
+---
+
+# Localization & Language Support
+
+The app must fully support multilingual localization.
+
+Requirements:
+
+* Automatically detect device language
+* Support:
+
+  * Arabic
+  * English
+* Dynamic RTL/LTR switching
+* Localized UI
+* No hardcoded text
+
+Use Flutter localization system:
+
+* intl
+* arb localization files
+
+Arabic UI must feel native and polished.
+
+---
+
+# Core Features
+
+## 1. AI Object Selection
+
+The user taps any object in a video:
+
+* person
+* car
+* product
+* furniture
+* clothing
+* screen
+* animal
+* etc
+
+The app automatically:
+
+* detects the object
+* isolates it
+* generates masks
+* tracks movement
+
+Selection must feel smooth and intelligent.
+
+---
+
+## 2. Smart Object Tracking
+
+Once an object is selected:
+
+* track it automatically across all frames
+* preserve smooth masks
+* handle motion and camera movement
+
+No manual frame-by-frame work required.
+
+---
+
+## 3. Remove Object
+
+Allow users to remove unwanted elements.
+
+Examples:
+
+* people
+* logos
+* wires
+* objects
+* unwanted background elements
+
+The AI should rebuild the background naturally using video inpainting.
+
+Goal:
+No visible scene damage.
+
+---
+
+## 4. Recolor Object
+
+Allow changing colors of:
+
+* cars
+* clothes
+* walls
+* products
+* objects
+
+Preserve:
+
+* shadows
+* reflections
+* lighting
+* texture
+
+The result must look realistic.
+
+---
+
+## 5. Replace Object
+
+Allow replacing objects while preserving:
+
+* perspective
+* depth
+* motion
+* lighting
+* cinematic consistency
+
+Examples:
+
+* replace products
+* replace cars
+* replace accessories
+* replace props
+
+---
+
+## 6. Motion Redirection
+
+Allow:
+
+* changing movement direction
+* smoothing movement
+* slow motion
+* cinematic motion effects
+* camera-like movement
+
+---
+
+## 7. Scene Relighting
+
+Allow modifying:
+
+* lighting
+* mood
+* daytime
+* cinematic color grading
+
+Examples:
+
+* day → sunset
+* normal → cinematic
+* flat → luxury
+
+---
+
+## 8. Auto Captions
+
+Generate animated subtitles automatically.
+
+Features:
+
+* speech recognition
+* animated captions
+* keyword highlighting
+* TikTok/Reels style subtitles
+
+---
+
+## 9. One-Tap Scene Styles
+
+Styles examples:
+
+* cinematic
+* luxury
+* horror
+* tech
+* vintage
+* motivational
+* dark aesthetic
+
+Applying styles should affect:
+
+* colors
+* transitions
+* effects
+* text style
+* motion
+* mood
+
+---
+
+# Video Processing Architecture
+
+Do NOT edit videos destructively.
+
+Use this pipeline:
+
+1. Extract frames
+2. Analyze scene
+3. Detect objects
+4. Generate masks
+5. Track motion
+6. Apply AI modifications
+7. Rebuild video
+8. Encode export
+
+Everything should be modular and scalable.
+
+---
+
+# UI/UX Requirements
+
+The interface must be:
+
+* minimal
+* cinematic
+* modern
+* elegant
+* smooth
+* lightweight
+
+Avoid:
+
+* cluttered interfaces
+* advanced editing panels
+* overwhelming menus
+
+Main workflow:
+
+1. Import video
+2. Tap object
+3. Choose AI action
+4. AI processes edit
+5. Export result
+
+---
+
+# Home Screen
+
+Include:
+
+* New Project
+* Recent Projects
+* AI Templates
+* Trending Styles
+
+Use modern card-based layout.
+
+---
+
+# Editor Screen
+
+Keep the interface extremely simple.
+
+Bottom navigation:
+
+* Objects
+* Text
+* Audio
+* Style
+* Export
+
+When user taps an object:
+Show floating AI action menu:
+
+* Remove
+* Replace
+* Recolor
+* Animate
+* Relight
+
+---
+
+# Navigation Drawer (Side Menu)
+
+Include a modern premium drawer.
+
+Design:
+
+* minimal
+* cinematic
+* smooth animations
+* dark mode friendly
+* rounded UI
+
+Drawer items:
+
+## Home
+
+Main dashboard.
+
+## My Projects
+
+Saved projects.
+
+## AI Templates
+
+Scene templates and styles.
+
+## Contact Developer
+
+Options:
+
+* Email
+* Telegram
+* WhatsApp
+* Website
+
+Open native apps when available.
+
+---
+
+## Leave Feedback
+
+Allow users to:
+
+* report bugs
+* suggest features
+* send feedback
+* attach screenshots
+
+Include:
+
+* feedback form
+* rating selector
+
+---
+
+## Current Version Details
+
+Show:
+
+* app version
+* build number
+* release notes
+* latest updates
+
+Example:
+Version 1.0.0
+
+* AI recolor improvements
+* smart tracking optimization
+* export enhancements
+
+---
+
+## Settings
+
+Include:
+
+* language
+* theme
+* export quality
+* notifications
+* auto-save
+
+---
+
+# Theme System
+
+Support:
+
+* Dark Mode
+* Light Mode
+* System Default
+
+Dark mode should be the primary visual identity.
+
+Use:
+
+* subtle gradients
+* soft shadows
+* glassmorphism effects
+* cinematic UI aesthetics
+
+Avoid:
+
+* aggressive colors
+* crowded layouts
+* outdated Android-style settings screens
+
+---
+
+# Typography
+
+Arabic Fonts:
+
+* Cairo
+* IBM Plex Sans Arabic
+
+English Fonts:
+
+* Inter
+* Poppins
+
+Typography must feel premium and creator-focused.
+
+---
+
+# Additional UX Details
+
+Include:
+
+* auto-save
+* smooth loading states
+* beautiful empty states
+* gesture-friendly controls
+* floating AI action buttons
+* haptic feedback
+* smooth transitions
+
+The app should feel like a next-generation AI creative platform.
+
+---
+
+# Performance Goals
+
+Prioritize:
+
+* smooth playback
+* optimized rendering
+* fast preview generation
+* lightweight UI
+* efficient memory usage
+
+Use preview proxies when needed.
+
+---
+
+# Export System
+
+Support:
+
+* TikTok
+* Instagram Reels
+* YouTube Shorts
+* 1080p
+* 4K
+
+Fast export system required.
+
+---
+
+# Monetization Model
+
+Freemium model.
+
+Free:
+
+* watermark
+* limited exports
+* limited AI actions
+
+Premium:
+
+* no watermark
+* advanced AI editing
+* premium cinematic styles
+* 4K export
+* faster processing
+
+---
+
+# Product Direction
+
+This app is NOT:
+
+* Adobe Premiere clone
+* traditional editing software
+
+This app IS:
+“AI-powered scene manipulation platform.”
+
+Focus on:
+
+* simplicity
+* cinematic quality
+* intelligent automation
+* editing reality inside videos
+
+The app should feel like:
+“The future of mobile AI video editing.”
